@@ -49,6 +49,7 @@ video[loop]{
 #scrollsDown{
   display: flex;
   position: absolute;
+  overflow: hidden;
   top: 0;
   left: 0;
   justify-content: space-between;
@@ -59,11 +60,12 @@ video[loop]{
 #scrollsDown.active{
    background-color: rgba(10,10, 10, 0.73);
    position: fixed;
-   animation-name: example;
-    animation-duration: 0.5s;
+   animation-name: topMenu;
+   animation-duration: 1s;
    align-items: center;
 }
-@keyframes example {
+
+@keyframes topMenu {
     from {height:0px;}
     to {height:77px;}
 }
