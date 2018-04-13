@@ -1,9 +1,5 @@
 body {
   margin: 0;
-  background-color: black;
-}
-body.active {
-  overflow: hidden;
 }
 li {
   list-style: none;
@@ -51,29 +47,18 @@ video[loop] {
 #scrollsDown {
   display: flex;
   position: absolute;
+  overflow: hidden;
   top: 0;
   left: 0;
   justify-content: space-between;
   width: 100%;
-  height: 77px;
   z-index: 1999;
 }
 #scrollsDown.active {
   background-color: rgba(10, 10, 10, 0.73);
   position: fixed;
-<<<<<<< HEAD
-  overflow: hidden;
-  animation-name: topMenu;
-  animation-duration: 0.6s;
-=======
-<<<<<<< HEAD
   animation-name: topMenu;
   animation-duration: 1s;
-=======
-  animation-name: example;
-  animation-duration: 2s;
->>>>>>> 8d60593b2d3a6b7035c7e30f42da86826abe41ee
->>>>>>> basic
   align-items: center;
 }
 @keyframes topMenu {
@@ -115,193 +100,6 @@ video[loop] {
 }
 #fixedBar > ul li:last-child > a img {
   max-width: 53%;
-}
-.background#header-background {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-  transform: translateZ(0);
-  will-change: transform;
-  transition: transform .5s;
-}
-.background#header-background:after {
-  clear: both;
-  content: "";
-  display: block;
-}
-.background#header-background.is-hidden {
-  transform: translateY(-100%);
-}
-.background#header-background.fixed {
-  position: fixed;
-  transform: translateY(-100%);
-}
-.background#header-background.fixed #logo {
-  height: 75px;
-  padding: 15px 0;
-}
-.background#header-background.active {
-  background-color: #000000ee;
-  position: fixed;
-}
-.background#course-header-background {
-  background: linear-gradient(130deg, rgba(191, 81, 40, 0.8), #f16529);
-  box-shadow: inset 0px -15px 25px -10px rgba(0, 0, 0, 0.3);
-  z-index: 99;
-  margin-top: 100px;
-  position: relative;
-  top: 0;
-}
-.background#main-course-background {
-  background-color: #ffffffee;
-  padding-bottom: 30px;
-  box-shadow: inset 0px -10px 25px -10px rgba(0, 0, 0, 0.2);
-}
-.background > section,
-.background > header,
-.background > footer {
-  width: 1280px;
-  margin: auto;
-}
-header {
-  display: grid;
-  grid-template-columns: auto auto;
-  align-items: center;
-}
-header #logo {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  height: 100px;
-  padding: 25px 0;
-}
-header #logo img {
-  height: 100%;
-}
-header > ul {
-  color: #fff;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-header > ul > li {
-  margin: 0 12px;
-}
-header > ul > li img {
-  height: 24px;
-  vertical-align: middle;
-}
-header > ul > li a {
-  color: #fff;
-  font-size: 105%;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-header > ul > li:first-of-type,
-header > ul > li:nth-of-type(2) {
-  border-right: 2px solid white;
-  padding-right: 25px;
-  line-height: 18px;
-}
-header > ul > li#language {
-  position: relative;
-  cursor: pointer;
-}
-header > ul > li#language:hover ul {
-  visibility: visible;
-  top: 24px;
-}
-header > ul > li#language ul {
-  position: absolute;
-  padding-top: 7px;
-  visibility: hidden;
-  top: 0px;
-  transition: 0.1s;
-  z-index: -1;
-}
-header > ul > li:last-of-type {
-  margin-right: 0;
-  margin-left: 15px;
-  position: relative;
-}
-header > ul > li .menu {
-  background: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  width: 26px;
-  height: 20px;
-  border-radius: 10px;
-}
-header > ul > li .menu:before {
-  content: "";
-  position: absolute;
-  bottom: -20px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 10px;
-  letter-spacing: 1px;
-  padding: 5px;
-  border-radius: 10px;
-}
-header > ul > li .menu.active:before {
-  content: "";
-  position: absolute;
-  bottom: -20px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 10px;
-  letter-spacing: 1px;
-}
-header > ul > li .menu > span {
-  height: 2px;
-  background: #fff;
-  display: block;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  transition: 0.2s all ease-in-out;
-  border-radius: 10px;
-}
-header > ul > li .menu > span:after,
-header > ul > li .menu > span:before {
-  content: "";
-  height: 2px;
-  background: #fff;
-  display: block;
-  width: 100%;
-  position: absolute;
-  transition: 0.2s top ease-in-out 0.2s, transform 0.2s ease-in-out;
-  border-radius: 10px;
-}
-header > ul > li .menu > span:after {
-  top: -8px;
-}
-header > ul > li .menu > span:before {
-  top: 8px;
-}
-header > ul > li .menu.active > span {
-  background: transparent;
-}
-header > ul > li .menu.active span:before,
-header > ul > li .menu.active span:after {
-  transition: 0.2s top ease-in-out, transform 0.2s ease-in-out 0.2s;
-  border-radius: 10px;
-}
-header > ul > li .menu.active span:after {
-  top: 0;
-  transform: rotate(45deg);
-}
-header > ul > li .menu.active span:before {
-  top: 0;
-  transform: rotate(-45deg);
 }
 .content {
   min-width: 638px;
@@ -463,7 +261,7 @@ header > ul > li .menu.active span:before {
   width: 101%;
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
-  z-index: 20;
+  z-index: -1;
 }
 .overlay-door nav {
   position: absolute;
@@ -694,75 +492,89 @@ header > ul > li .menu.active span:before {
   align-items: center;
 }
 #implementedProjects > section {
+  width: 78%;
+  height: 89.3%;
   min-height: 596px;
 }
 .vertical-carousel {
+  display: block;
+  position: relative;
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
 }
 .vertical-carousel-box,
 .vertical-carousel-box .item {
+  position: relative;
   height: 100%;
+  width: 100%;
   margin: 0;
 }
 .vertical-carousel-box .item {
   overflow: hidden;
 }
 .item > fieldset {
-  width: 24.5vw;
-  height: 28vw;
+  position: relative;
+  width: 320px;
+  height: 340px;
   border: 1px dotted #ffffff;
+  margin-left: 52%;
+  margin-top: 14%;
   border-radius: 18px;
 }
 .item > fieldset > legend > div {
-  width: 11.5vw;
+  width: 180px;
 }
 .item > fieldset > legend > div > img {
-  width: 5vw;
+  width: 65px;
 }
 .text_container {
   text-align: center;
   height: 60%;
 }
 .text_container > h2 {
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   font-family: 'Nunito', sans-serif;
   color: #ffffff;
 }
 .text_container > span {
   display: block;
   background-color: #ffffff;
-  width: 11.5vw;
+  width: 9rem;
   height: 2px;
   margin: auto;
 }
 .text_container > p {
-  width: 80%;
-  margin: 14% auto;
-  font-size: 1.1vw;
+  width: 16rem;
+  margin: 10% auto;
+  font-size: 1rem;
   font-family: 'Nunito', sans-serif;
   color: #ffffff;
-  line-height: 1.9vw;
+  line-height: 1.5vw;
 }
 .text_container > button {
   width: 34%;
   height: 15.5%;
-  font-size: 1vw;
+  font-size: 0.9rem;
   border-radius: 8px;
   border: none;
   outline: none;
   cursor: pointer;
-  margin-top: -10%;
 }
 .vertical-carousel-indicators {
+  z-index: 30;
+  top: 15%;
+  position: absolute;
+  left: 0%;
   text-align: center;
-  padding: 0;
+  height: 60%;
+  width: 45%;
   font-family: sans-serif;
   transition-duration: 0.50s;
+  padding: 0;
+  margin: 0;
 }
 .vertical-carousel-indicators > li {
-  font-size: 1.2vw;
+  font-size: 1rem;
   list-style: none;
   cursor: pointer;
   padding: 14px 0px 14px 0px;
@@ -772,8 +584,8 @@ header > ul > li .menu.active span:before {
 .vertical-carousel-indicators li.active {
   padding-top: 33px;
   padding-bottom: 33px;
+  font-size: 1.2rem;
   color: #ffffff;
-  font-weight: 800;
 }
 .vertical-carousel-box {
   -webkit-transition: transform 500ms;

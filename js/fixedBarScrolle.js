@@ -22,7 +22,7 @@
    $(window).scroll(function(event){
 
        var NextScroll = $(this).scrollTop();
-       var bar = document.getElementById('scrollsDown');
+       var bar = document.getElementById('header-background');
 
        if (NextScroll > CurrentScroll){
           bar.classList.remove("active");
