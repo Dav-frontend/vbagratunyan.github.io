@@ -406,8 +406,6 @@
   }
   video[loop] {
     display: none;
-  }
-  body {
     background-color: black;
   }
   .icon-scroll {
