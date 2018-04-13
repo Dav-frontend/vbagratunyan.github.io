@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: black;
 }
 li {
   list-style: none;
@@ -497,84 +498,75 @@ video[loop] {
   align-items: center;
 }
 #implementedProjects > section {
-  width: 78%;
-  height: 89.3%;
   min-height: 596px;
 }
 .vertical-carousel {
-  display: block;
-  position: relative;
   overflow: hidden;
   display: flex;
+  justify-content: space-between;
 }
 .vertical-carousel-box,
 .vertical-carousel-box .item {
   height: 100%;
-  width: 100%;
   margin: 0;
 }
 .vertical-carousel-box .item {
   overflow: hidden;
 }
 .item > fieldset {
-  width: 320px;
-  height: 340px;
+  width: 24.5vw;
+  height: 28vw;
   border: 1px dotted #ffffff;
-  margin-left: 52%;
-  margin-top: 14%;
   border-radius: 18px;
 }
 .item > fieldset > legend > div {
-  width: 180px;
+  width: 11.5vw;
 }
 .item > fieldset > legend > div > img {
-  width: 65px;
+  width: 5vw;
 }
 .text_container {
   text-align: center;
   height: 60%;
 }
 .text_container > h2 {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-family: 'Nunito', sans-serif;
   color: #ffffff;
 }
 .text_container > span {
   display: block;
   background-color: #ffffff;
-  width: 9rem;
+  width: 11.5vw;
   height: 2px;
   margin: auto;
 }
 .text_container > p {
-  width: 16rem;
-  margin: 10% auto;
-  font-size: 1rem;
+  width: 80%;
+  margin: 14% auto;
+  font-size: 1.1vw;
   font-family: 'Nunito', sans-serif;
   color: #ffffff;
-  line-height: 1.5vw;
+  line-height: 1.9vw;
 }
 .text_container > button {
   width: 34%;
   height: 15.5%;
-  font-size: 0.9rem;
+  font-size: 1vw;
   border-radius: 8px;
   border: none;
   outline: none;
   cursor: pointer;
+  margin-top: -10%;
 }
 .vertical-carousel-indicators {
-  z-index: 30;
-  left: 0%;
   text-align: center;
-  height: 60%;
+  padding: 0;
   font-family: sans-serif;
   transition-duration: 0.50s;
-  padding: 0;
-  margin: 0;
 }
 .vertical-carousel-indicators > li {
-  font-size: 1rem;
+  font-size: 1.2vw;
   list-style: none;
   cursor: pointer;
   padding: 14px 0px 14px 0px;
@@ -584,8 +576,8 @@ video[loop] {
 .vertical-carousel-indicators li.active {
   padding-top: 33px;
   padding-bottom: 33px;
-  font-size: 1.2rem;
   color: #ffffff;
+  font-weight: 800;
 }
 .vertical-carousel-box {
   -webkit-transition: transform 500ms;
