@@ -16,27 +16,6 @@
     height: 92.8%;
   }
   /*style Header: text Animation*/
-  header > a img {
-    max-width: 90%;
-    margin-left: 10%;
-    margin-top: 5%;
-  }
-  #fixedBar > ul li:first-of-type {
-    font-size: 1.2em;
-  }
-  #fixedBar > ul li > a img {
-    max-width: 84%;
-  }
-  .text > p {
-    font-size: 3.5vw;
-  }
-  .text > ul > li {
-    font-size: 3.5vw;
-    width: 50%;
-  }
-  .mouse_pad > a > img {
-    width: 90%;
-  }
   #OurCurses > section > article section:nth-child(2) > article h3 {
     font-size: 1em;
   }
@@ -46,56 +25,56 @@
   #implementedProjects {
     min-height: 640px;
   }
-  #implementedProjects > section {
-    width: 85%;
-    height: 89.3%;
-  }
-  .vertical-carousel-indicators {
-    top: 10%;
-    left: 3%;
-  }
-  .vertical-carousel-indicators > li {
-    font-size: 0.9rem;
-    padding: 13px 0px 13px 0px;
-  }
-  .vertical-carousel-indicators > li.active {
-    font-size: 1rem;
-    padding: 20px 0px 20px 0px;
+  .vertical-carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .item > fieldset {
-    width: 290px;
-    height: 300px;
-    margin-left: 51%;
-    margin-top: 12%;
-    border-radius: 18px;
+    width: 31vw;
+    height: 33vw;
   }
   .item > fieldset > legend > div {
-    width: 180px;
+    width: 14vw;
   }
   .item > fieldset > legend > div > img {
-    width: 60px;
+    width: 6vw;
   }
   .text_container {
     text-align: center;
     height: 60%;
   }
   .text_container > h2 {
-    font-size: 1.2rem;
+    font-size: 2.1vw;
   }
   .text_container > span {
     width: 7rem;
     height: 1px;
   }
   .text_container > p {
-    width: 16rem;
-    margin: 10% auto;
-    font-size: 0.9rem;
-    font-family: 'Nunito', sans-serif;
-    color: #ffffff;
-    line-height: 1rem;
+    width: 95%;
+    margin: 14% auto;
+    font-size: 1.3vw;
+    line-height: 2.2vw;
+    margin-bottom: 0px;
   }
   .text_container > button {
-    font-size: 0.7rem;
+    font-size: 1.4vw;
+    margin-top: 10%;
+    width: 34%;
+    height: 15.5%;
+  }
+  .vertical-carousel-indicators > li {
+    font-size: 1.4vw;
+    list-style: none;
+    cursor: pointer;
+    padding: 12px 0px 12px 0px;
+    color: #fff;
+    transition-duration: 0.50s;
+  }
+  .vertical-carousel-indicators li.active {
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
   }
   #needHelp > section > article:first-child > span {
     font-size: 0.7rem;
