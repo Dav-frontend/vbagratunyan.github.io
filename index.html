@@ -19,26 +19,6 @@
     <script>new WOW().init();</script>
 </head>
 <body>
-   <!-- <header id="scrollsDown">
-     <a href=""><img id="logoBasic" src="img/logo/logoBasic1.png" alt="logo"></a>
-       <span id="fixedBar">
-           <ul>
-               <li id="phoneNumber"><span>+374 11 65 99 88</span></li>
-               <li class="search"><a href=""><img id="logoSearch" src="img/logo/search%20copy%202.png" alt=""></a></li>
-               <li>
-                    <div class="container" id="trigger-overlay" onclick="myFunction(this)">
-            						<div class="bar1 "></div>
-            						<div class="bar2 "></div>
-            						<div class="bar3 "></div>
-					           </div>
-               </li>
-               <li><a href=""><img id="logoPerson" src="img/logo/person%201_%20white.png" alt=""></a></li>
-           </ul>
-       </span> -->
-<!--overlay menu body-->
-
-  <!--_-_-_-_-_-_-_-_--->
-
    <!-- </header> -->
    <section class="background" id="header-background">
     <header>
@@ -123,8 +103,11 @@
 
                 </article>
 
-                <article>
+                <article  class='landing'>
+                    <!--JAVA programing-->
+                    <span class='countdown'></span>
                 </article>
+
               </section>
               <section>
                 <article>
@@ -145,9 +128,10 @@
                   <img src="img/countdown/HTML_Logo copy.png" alt="">
                 </article>
 
-                <article>
-
+                <article class='landing'>
+                  <div class='countdown'></div>
                 </article>
+
               </section>
               <section>
                 <article>
@@ -619,6 +603,44 @@
       }
 
 
+  //Java programming
+  const countdown = document.querySelector(".countdown");
+  // Set the launch date
+  // Date needs to be formatted Month day, yyyy
+  const launchDate = new Date("May 3, 2018 00:00:00").getTime();
+
+  // Update Every Second
+  const intvl = setInterval(() => {
+  // Get todays date and time in miliseconds
+  const now = new Date().getTime();
+
+  // Distance from now to launch date in miliseconds
+  const distance = launchDate - now;
+
+  // Time calculations
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const mins =  Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds =  Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result
+  countdown.innerHTML = `
+    <div>${days}<span>Օր</span></div>
+    <div>${hours}<span>Ժամ</span></div>
+    <div>${mins}<span>Րոպե</span></div>
+    <div>${seconds}<span>Վայրկյան</span></div>
+  `;
+
+  // if date passed
+  if(distance < 0 ) {
+     clearInterval(intvl);
+    // Style and output text
+    countdown.style.color = '#17a2b8';
+    countdown.innerHtml = 'Launched!';
+  }
+  }, 1000);
+
+  //Java programming
     </script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: black;
 }
 
 body.active{
@@ -50,6 +51,7 @@ video[loop]{
     z-index: -1999;
     filter: blur(1px) brightness(1.11) contrast(0.98) invert(0.13) ;
 }   //background-vido
+
 
 //---------- section1 {header}
 // #scrollsDown{
@@ -160,17 +162,14 @@ video[loop]{
 .background>section, .background>header, .background>footer{
   width: 1280px;
   margin: auto;
-
+}
 #scrollsDown.active{
    background-color: rgba(10,10, 10, 0.73);
    position: fixed;
-
    animation-name: topMenu;
    animation-duration: 1s;
-
    animation-name: example;
-    animation-duration: 2s;
-
+   animation-duration: 2s;
    align-items: center;
 }
 header{
@@ -313,6 +312,7 @@ header{
     }
   }
 }
+//header
 .content{
     min-width: 638px;
 }
@@ -595,6 +595,7 @@ transition-delay: 0s;
 //-------------------end section1{header}
 
 //----------_Section2_
+
 #OurCurses{
     display: flex;
     justify-content: center;
@@ -677,6 +678,43 @@ transition-delay: 0s;
         }
     }
 }
+    //timer
+      * {
+      box-sizing: border-box;
+      }
+      .landing .countdown {
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #fff;
+      }
+      .landing .countdown div {
+      width: 3rem;
+      height:3rem;
+      border: 1px solid #fff;
+      border-radius: 500px;
+      margin: 0.2vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      }
+      .landing .countdown span {
+      display: block;
+      font-size: 0.5rem;
+      font-family: sans-serif;
+      font-weight: 100;
+        color: #fff;
+      }
+      //timer
+
+
+
+
 
 .text {
   display: flex;
@@ -839,19 +877,19 @@ transition-delay: 0s;
 }
 
 #item1 {
-  background-color: red;
+  //
 }
 
 #item2 {
-   background-color: #fff
+   //
 }
 
 #item3 {
-    background-color: #452229
+  //
 }
 
 #item4 {
-    background-color: #77726;
+  //
 }
 
 //-------------------end Section3
