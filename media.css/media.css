@@ -33,6 +33,7 @@
   .item > fieldset {
     width: 31vw;
     height: 33vw;
+    margin-top: 8.5em;
   }
   .item > fieldset > legend > div {
     width: 14vw;
@@ -201,6 +202,62 @@
   }
   .mouse_pad > a img {
     width: 98%;
+  }
+  .vertical-carousel-indicators {
+    display: none;
+  }
+  #myVerticalCarousel {
+    overflow-y: scroll;
+  }
+  .vertical-carousel-box {
+    margin: auto;
+  }
+  .item > fieldset {
+    width: 22rem;
+    height: 23rem;
+    margin-top: 8.5em;
+  }
+  .item > fieldset > legend > div {
+    width: 10rem;
+  }
+  .item > fieldset > legend > div > img {
+    width: 4rem;
+  }
+  .text_container {
+    text-align: center;
+    height: 60%;
+  }
+  .text_container > h2 {
+    font-size: 1.4rem;
+  }
+  .text_container > span {
+    width: 8rem;
+    height: 1px;
+  }
+  .text_container > p {
+    width: 95%;
+    margin: 14% auto;
+    font-size: 0.9rem;
+    line-height: 2.8vw;
+    margin-bottom: 0px;
+  }
+  .text_container > button {
+    font-size: 0.9rem;
+    margin-top: 10%;
+    width: 34%;
+    height: 15.5%;
+  }
+  .vertical-carousel-indicators > li {
+    font-size: 1.4vw;
+    list-style: none;
+    cursor: pointer;
+    padding: 12px 0px 12px 0px;
+    color: #fff;
+    transition-duration: 0.50s;
+  }
+  .vertical-carousel-indicators li.active {
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
   }
   #needHelp section {
     background-size: 78%;

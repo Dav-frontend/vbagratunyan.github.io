@@ -537,7 +537,7 @@ header > ul > li .menu.active span:before {
   margin-bottom: 30px;
 }
 #OurCurses > section > article > section:nth-child(1) {
-  width: 31.3%;
+  width: 35.3%;
   background-color: #343a41;
   border-radius: 10px 0 0 10px;
   text-align: center;
@@ -609,7 +609,7 @@ header > ul > li .menu.active span:before {
   height: 3rem;
   border: 1px solid #fff;
   border-radius: 500px;
-  margin: 0.2vw;
+  margin: 0.4vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -673,6 +673,7 @@ header > ul > li .menu.active span:before {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .vertical-carousel-box,
 .vertical-carousel-box .item {
@@ -687,6 +688,7 @@ header > ul > li .menu.active span:before {
   height: 28vw;
   border: 1px dotted #ffffff;
   border-radius: 18px;
+  margin-top: 7em;
 }
 .item > fieldset > legend > div {
   width: 11.5vw;
