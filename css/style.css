@@ -1,3 +1,4 @@
+@import "owl.carousel.css";
 body {
   margin: 0;
   background-color: black;
@@ -74,7 +75,7 @@ video[loop] {
   height: 75px;
   padding: 15px 0;
 }
-.background#header-background.active {
+.background#header-background.background.active {
   background-color: #000000ee;
   position: fixed;
 }
@@ -1324,69 +1325,6 @@ time {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 90%;
-}
-#partner section > section {
-  width: 100%;
-}
-#main-content {
-  width: 80%;
-}
-#main-content img {
-  max-width: 95%;
-  transition-duration: 0.20s;
-}
-#main-content img:hover {
-  max-width: 100%;
-  transition-duration: 0.20s;
-}
-/**
- * CSS style for carouselTicker
- **/
-.carouselTicker__list {
-  padding: 0;
-  list-style-type: none;
-  overflow: hidden;
-}
-.carouselTicker__item {
-  margin: 0 0 0 5px;
-  float: left;
-  width: 100px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-}
-.carouselTicker__loader {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
-/**
- * CSS style for vertical direction
- **/
-.carouselTicker_vertical .carouselTicker__list {
-  margin: 0;
-}
-.carouselTicker_vertical .carou1selTicker__item {
-  margin: 0 0 5px 0;
-  width: 100px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-}
-#carouselTicker .carouselTicker__item {
-  width: 220px;
-  height: 90px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.carouselTicker__item img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 footer {
   display: flex;

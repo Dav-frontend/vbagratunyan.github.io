@@ -518,33 +518,15 @@
        <section id="last" class="container_consolidation">
            <section id="partner">
               <h2>OUR PARTNERS</h2>
-                         <section id="main-content">
-            <div id="demos">
-
-                    <div id="carouselTicker" class="carouselTicker">
-                        <ul class="carouselTicker__list">
-                            <li class="carouselTicker__item">
-                                <a href="#"><img src="img/partners2/apollobytes.png" alt="banner image"></a>
-                            </li>
-                            <li class="carouselTicker__item">
-                                <a href="#"><img src="img/partners2/astgeek.png" alt="banner image"></a>
-                            </li>
-                            <li class="carouselTicker__item">
-                                <a href="#"><img src="img/partners2/DEVELOPMENT.png" alt="banner image"></a>
-                            </li>
-                            <li class="carouselTicker__item">
-                                <a href="#"><img src="img/partners2/fj.png" alt="banner image"></a>
-                            </li>
-                            <li class="carouselTicker__item">
-                                <a href="#"><img src="img/partners2/flux.png" alt="banner image"></a>
-                            </li>
-                            <li class="carouselTicker__item">
-                                <a href="#"><img src="img/partners2/simply-technologies.png" alt="banner image"></a>
-                            </li>
-                        </ul>
-                    </div>
-        </div>
-      </section>
+          
+                <article class="owl-carousel owl-theme" id="partners">
+<a href="http://www.mts.am/" target="_blank"><img src="images/partners/vivacell-mts.svg" alt="VivaCell MTS" title="VivaCell MTS"></a>
+<a href="http://www.ucom.am/" target="_blank"><img src="images/partners/ucom.svg" alt="Ucom" title="Ucom"></a>
+<a href="http://www.apollobytes.com" target="_blank"><img src="images/partners/apollobytes.png" alt="apolloBytes" title="apolloBytes"></a>
+<a href="http://www.frontjet.com" target="_blank"><img src="images/partners/fj.png" alt="Frontjet" title="Frontjet"></a>
+<a href="http://www.st-dev.com" target="_blank"><img src="images/partners/st-dev.png" alt="STDev" title="STDev"></a>
+</article>
+              </article>
            </section>
 
 
@@ -584,14 +566,70 @@
        </section>
         <script src="js/fixedBarScrolle.js"></script>
        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-       <script src="js/jquery.carouselTicker.min.js"></script>
        <script src="JavaScript/index.js"></script>
-       <script src="js/main.js"></script> -->
        <script src="js/basic.js"></script>
        <script src="js/vertical_carousal.js"></script>
      <script src="menuScript.js/demo1.js"></script>
       <script src="menuScript.js/classie.js"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
     <script>
+
+
+    $('.owl-carousel').owlCarousel({
+        smartSpeed: 500,
+        margin:30,
+        responsiveClass:true,
+        nav: false,
+        dots: false,
+        rewind: false,
+        loop:true,
+        autoplay: true,
+        autoplayTimeout:2500,
+        autoplayHoverPause:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1024:{
+                items:4
+            },
+            1280:{
+                items:5
+            }
+        }
+    })
+
+    $('.menu, .navigator-on').click(function(){
+        if ($('.menu').hasClass('active')) {
+            $('.navigator-on').removeClass('active');
+            $('.navigator-on').delay(800).fadeOut('slow');
+            setTimeout(function() {
+                $('.menu').removeClass('active');
+                $('.section-wrap').removeClass('active');
+            }, 800);
+        } else {
+            $('.menu').addClass('active');
+            $('.navigator-on').fadeIn('slow');
+            $('.navigator-on').addClass('active');
+            $('.navigator-on').addClass('active');
+            $('.section-wrap').addClass('active');
+        }
+    });
+
+
+
+
+
+
+
+
+
             //Fullscreen-Vertical-Page-Carousel
     function mouseScroll(id){
         var offset = 0;
