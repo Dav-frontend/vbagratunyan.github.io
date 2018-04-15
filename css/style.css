@@ -1326,6 +1326,11 @@ time {
   flex-direction: column;
   justify-content: center;
 }
+#partner > .owl-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 footer {
   display: flex;
   flex-direction: column;
