@@ -18,7 +18,7 @@
 		if( classie.has( overlay, 'open' ) ) {
 			classie.remove( overlay, 'open' );
 			classie.add( overlay, 'close' );
-			body.classList.remove("active");
+			// body.classList.remove("active");
 			// body.style.overflow = 'scroll';
 			var onEndTransitionFn = function( ev ) {
 				if( support.transitions ) {
@@ -42,7 +42,7 @@
 		}
 		else if( !classie.has( overlay, 'close' ) ) {
 			classie.add( overlay, 'open' );
-				body.classList.add("active");
+				// body.classList.add("active");
 
 			// body.style.overflow = 'hidden';
 		}
