@@ -604,30 +604,7 @@
         }
     })
 
-    $('.menu, .navigator-on').click(function(){
-        if ($('.menu').hasClass('active')) {
-            $('.navigator-on').removeClass('active');
-            $('.navigator-on').delay(800).fadeOut('slow');
-            setTimeout(function() {
-                $('.menu').removeClass('active');
-                $('.section-wrap').removeClass('active');
-            }, 800);
-        } else {
-            $('.menu').addClass('active');
-            $('.navigator-on').fadeIn('slow');
-            $('.navigator-on').addClass('active');
-            $('.navigator-on').addClass('active');
-            $('.section-wrap').addClass('active');
-        }
-    });
-
-
-
-
-
-
-
-
+  
 
             //Fullscreen-Vertical-Page-Carousel
     function mouseScroll(id){
