@@ -80,17 +80,26 @@ if ( typeof define === 'function' && define.amd ) {
 })( window );
 
 // menu 2
-
+var body = document.querySelector( 'body' );
 $('.menu, .navigator-on').click(function(){
       if ($('.menu').hasClass('active')) {
           $('.navigator-on').removeClass('active');
           $('.navigator-on').delay(800).fadeOut('slow');
+          $("body")
           setTimeout(function() {
               $('.menu').removeClass('active');
+              document.onmousewheel=document.onwheel=function(){
+                return true;
+              };
+              // $('body').removeClass('active');
               $('.section-wrap').removeClass('active');
           }, 100);
       } else {
           $('.menu').addClass('active');
+          document.onmousewheel=document.onwheel=function(){
+            return false;
+          };
+          // $('body').addClass('active');
           $('.navigator-on').fadeIn('slow');
           $('.navigator-on').addClass('active');
           $('.navigator-on').addClass('active');
