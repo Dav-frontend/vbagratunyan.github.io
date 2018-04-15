@@ -203,6 +203,14 @@
   .mouse_pad > a img {
     width: 98%;
   }
+  #implementedProjects {
+    display: flex;
+    justify-content: center;
+  }
+  #implementedProjects section {
+    width: 65vw;
+    background-color: red;
+  }
   .vertical-carousel-indicators {
     display: none;
   }
@@ -213,39 +221,37 @@
     margin: auto;
   }
   .item > fieldset {
-    width: 22rem;
-    height: 23rem;
+    width: 45vw;
+    height: 50vw;
     margin-top: 8.5em;
   }
   .item > fieldset > legend > div {
-    width: 10rem;
+    width: 20vw;
   }
   .item > fieldset > legend > div > img {
-    width: 4rem;
+    width: 10vw;
   }
   .text_container {
     text-align: center;
     height: 60%;
   }
   .text_container > h2 {
-    font-size: 1.4rem;
+    font-size: 3vw;
   }
   .text_container > span {
-    width: 8rem;
+    width: 20vw;
     height: 1px;
   }
   .text_container > p {
-    width: 95%;
-    margin: 14% auto;
-    font-size: 0.9rem;
-    line-height: 2.8vw;
+    width: 88%;
+    margin: 13% auto;
+    font-size: 2.1vw;
+    line-height: 2.3vw;
     margin-bottom: 0px;
   }
   .text_container > button {
-    font-size: 0.9rem;
+    font-size: 1.6vw;
     margin-top: 10%;
-    width: 34%;
-    height: 15.5%;
   }
   .vertical-carousel-indicators > li {
     font-size: 1.4vw;
