@@ -94,7 +94,7 @@ video[loop] {
 .background > section,
 .background > header,
 .background > footer {
-  width: 1200px;
+  width: 1280px;
   margin: auto;
 }
 #scrollsDown.active {
@@ -406,6 +406,9 @@ header > ul > li .menu.active span:before {
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
   z-index: 20;
+}
+.vertical_menu {
+  padding: 0;
 }
 .overlay-door nav {
   position: absolute;
