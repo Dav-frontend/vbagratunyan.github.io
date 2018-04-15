@@ -93,7 +93,7 @@ $('.menu, .navigator-on').click(function(){
               };
               // $('body').removeClass('active');
               $('.section-wrap').removeClass('active');
-          }, 100);
+          }, 500);
       } else {
           $('.menu').addClass('active');
           document.onmousewheel=document.onwheel=function(){
