@@ -94,7 +94,7 @@ video[loop] {
 .background > section,
 .background > header,
 .background > footer {
-  width: 1280px;
+  width: 1200px;
   margin: auto;
 }
 #scrollsDown.active {

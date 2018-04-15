@@ -3,7 +3,42 @@
 
                     /*M-(1) iPad --> max-width-1024 end end min-width-768*/
                    /*M-(2) iPone --> max-width-768 end min-width-320*/
+  @media only screen and (max-width: 1280px) {
 
+   .background > header{
+     width: 1000px;
+   }
+ }
+ @media only screen and (max-width: 1024px) {
+
+   .background > header,{
+     width: 100%;
+     padding: 0 20px;
+   }
+   header #logo {
+     height: 90px;
+   }
+   header > ul > li:first-of-type,
+   header > ul > li:nth-of-type(2) {
+     display: none;
+   }
+   .background#course-header-background {
+     margin-top: 90px;
+   }
+   .background#main-course-background {
+     padding-bottom: 20px;
+   }
+
+ }
+ @media only screen and (max-width: 768px) {
+   .background footer fieldset {
+     padding: 15px;
+   }
+   #copyright {
+     padding: 20px;
+   }
+ }
+//header media
 
 @media only screen and (min-width : 768px) and (max-width : 1024px){//.
     /*Child section Width end Height*/
@@ -210,11 +245,7 @@ height: 70px;
 
 /*style Header: Fixed menu Basic.icon +search+menu+person*/
 
-  header > a img {
-    margin-left: 10%;
-    margin-top: 5%;
-    width: 85%;
-  }
+
   #fixedBar>ul{
       display: flex;
 
@@ -337,8 +368,10 @@ height: 70px;
             margin-bottom: 0px;
         }
         >button{
-            font-size: 1.6vw;
+            font-size: 2vw;
             margin-top: 10%;
+            width: 18vw;
+            height: 5vw;
         }
     }
 
